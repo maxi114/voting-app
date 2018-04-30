@@ -1,0 +1,9 @@
+<h1>
+    {{vm.title}}</h1>
+<hr>
+<input type="text" class="input" ng-model="vm.user.name">
+<br>
+<br>
+<input type="text" class="input" ng-model="vm.user.password">
+<hr>
+<button ng-click="vm.register()" class="btn" ng-disabled="!vm.user.name || !vm.user.password">Register</button>
